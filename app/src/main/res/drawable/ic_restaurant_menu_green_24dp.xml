@@ -1,0 +1,33 @@
+<!--
+  ~ New BSD License
+  ~
+  ~ Copyright © 2020 Vijayaraghavan (https://www.oncampus.in) All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~ * Redistributions of source code must retain the above copyright notice, this
+  ~   list of conditions and the following disclaimer.
+  ~ * Redistributions in binary form must reproduce the above copyright notice, this
+  ~   list of conditions and the following disclaimer in the documentation and/or
+  ~   other materials provided with the distribution.
+  ~ * Neither the name of “onCampus Private Limited” nor the names of its contributors may be used to
+  ~   endorse or promote products derived from this software without specific prior
+  ~   written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+  ~ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  ~ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  ~ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+  ~ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  ~ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  ~ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+  ~ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  ~ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<vector android:height="12dp" android:tint="#6AC927"
+    android:viewportHeight="24.0" android:viewportWidth="24.0"
+    android:width="12dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#FF000000" android:pathData="M8.1,13.34l2.83,-2.83L3.91,3.5c-1.56,1.56 -1.56,4.09 0,5.66l4.19,4.18zM14.88,11.53c1.53,0.71 3.68,0.21 5.27,-1.38 1.91,-1.91 2.28,-4.65 0.81,-6.12 -1.46,-1.46 -4.2,-1.1 -6.12,0.81 -1.59,1.59 -2.09,3.74 -1.38,5.27L3.7,19.87l1.41,1.41L12,14.41l6.88,6.88 1.41,-1.41L13.41,13l1.47,-1.47z"/>
+</vector>

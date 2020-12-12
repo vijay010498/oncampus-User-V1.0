@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ New BSD License
+  ~
+  ~ Copyright © 2020 Vijayaraghavan (https://www.oncampus.in) All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~ * Redistributions of source code must retain the above copyright notice, this
+  ~   list of conditions and the following disclaimer.
+  ~ * Redistributions in binary form must reproduce the above copyright notice, this
+  ~   list of conditions and the following disclaimer in the documentation and/or
+  ~   other materials provided with the distribution.
+  ~ * Neither the name of “onCampus Private Limited” nor the names of its contributors may be used to
+  ~   endorse or promote products derived from this software without specific prior
+  ~   written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+  ~ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  ~ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  ~ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+  ~ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  ~ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  ~ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+  ~ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  ~ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<androidx.cardview.widget.CardView android:layout_marginTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="wrap_content"
+    android:id="@+id/root_card_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_restaurant"
+            android:src="@drawable/ic_restaurant"
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txt_restaurant_name"
+                    android:text="Restaurant A"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txt_restaurant_rating_count"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="10sp"
+                    android:text=" 1024 ratings "
+                    />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/txt_res_open_status"
+                android:text="Open Now"
+                android:textSize="10sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/txt_res_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="North Indian, South Indian"
+                android:textSize="10sp"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_res_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableStart="@drawable/ic_basline_star_small_24"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="4.2"
+                    android:textSize="10sp" />
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/txt_res_prepTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:drawableStart="@drawable/ic_baseline_access_time_24"
+                    android:text="20 MINS"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="10sp"
+                    />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/txt_res_price_for_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:drawableStart="@drawable/ic_baseline_attach_money_24"
+                    android:text="₹100 FOR TWO"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="10sp"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_restaurant_order_count"
+                android:layout_gravity="center_vertical|end"
+                android:gravity="end"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text=" 525 orders delivered happily! "
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

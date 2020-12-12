@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ New BSD License
+  ~
+  ~ Copyright © 2020 Vijayaraghavan (https://www.oncampus.in) All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~ * Redistributions of source code must retain the above copyright notice, this
+  ~   list of conditions and the following disclaimer.
+  ~ * Redistributions in binary form must reproduce the above copyright notice, this
+  ~   list of conditions and the following disclaimer in the documentation and/or
+  ~   other materials provided with the distribution.
+  ~ * Neither the name of “onCampus Private Limited” nor the names of its contributors may be used to
+  ~   endorse or promote products derived from this software without specific prior
+  ~   written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+  ~ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  ~ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  ~ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+  ~ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  ~ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  ~ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+  ~ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  ~ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.signup.SignupActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/image_close"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="32dp"
+                android:src="@drawable/ic_close"
+                app:tint="@android:color/black" />
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="start"
+                android:src="@drawable/ic_signup" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center|start"
+                android:paddingTop="3dp"
+                android:text="Signup"
+                android:textAppearance="@style/AppbarTitle"
+                android:textColor="@android:color/black"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center|start"
+                android:paddingTop="3dp"
+                android:text="Please fill in the below details"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/gmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:background="@drawable/bg_rounded_green_stroke"
+                android:drawableEnd="@drawable/ic_arrow_right"
+                android:text="Link Email"/>
+
+            <LinearLayout
+                android:id="@+id/layout_choose_campus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#f2f2f2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_campus_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:drawableEnd="@drawable/ic_arrow_right"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center|start"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingTop="8dp"
+                    android:hint="Select your campus"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/label_register"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/colorPrimaryDark" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

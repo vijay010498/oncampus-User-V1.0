@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+  ~ New BSD License
+  ~
+  ~ Copyright © 2020 Vijayaraghavan (https://www.oncampus.in) All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~ * Redistributions of source code must retain the above copyright notice, this
+  ~   list of conditions and the following disclaimer.
+  ~ * Redistributions in binary form must reproduce the above copyright notice, this
+  ~   list of conditions and the following disclaimer in the documentation and/or
+  ~   other materials provided with the distribution.
+  ~ * Neither the name of “onCampus Private Limited” nor the names of its contributors may be used to
+  ~   endorse or promote products derived from this software without specific prior
+  ~   written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+  ~ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  ~ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  ~ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+  ~ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  ~ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  ~ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+  ~ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  ~ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/campus_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ssn_gate"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="1dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/campus_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="SSN COLLEGE OF ENGINEERING"
+                android:fontFamily="@font/open_sans_bold"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/campus_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="kalavakkam-chennai"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/campus_no_of_restaurants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Restaurants: 2"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textSize="12sp" />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

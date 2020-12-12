@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ New BSD License
+  ~
+  ~ Copyright © 2020 Vijayaraghavan (https://www.oncampus.in) All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~ * Redistributions of source code must retain the above copyright notice, this
+  ~   list of conditions and the following disclaimer.
+  ~ * Redistributions in binary form must reproduce the above copyright notice, this
+  ~   list of conditions and the following disclaimer in the documentation and/or
+  ~   other materials provided with the distribution.
+  ~ * Neither the name of “onCampus Private Limited” nor the names of its contributors may be used to
+  ~   endorse or promote products derived from this software without specific prior
+  ~   written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+  ~ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  ~ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  ~ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+  ~ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  ~ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  ~ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+  ~ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  ~ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.svijayr007.androideatitv2">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name=".Common.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/oncampus_logo_green_white_bg_512"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:node="merge"
+        tools:replace="android:icon">
+
+        <activity
+            android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/FinestWebViewTheme.Light" />
+        <activity
+
+            android:name=".ui.restaurant_detail.RestaurantDetailActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+
+            android:name=".ui.order_detail.OrderDetailActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+
+            android:name=".ui.orderRating.RatingActivity"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity
+            android:name=".ui.block_screen.BlockScreenActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.suggestions.SuggestionsActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.no_internet.NoInternetActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.signup.SignupActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.login.OtpActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.payment.PaymentActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/oncampus_logo_green_white_bg_512" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service android:name=".services.MyFCMServices">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

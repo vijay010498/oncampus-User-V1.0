@@ -1,0 +1,166 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+/*
+ * New BSD License
+ *
+ * Copyright © 2020 Vijayaraghavan (https://www.oncampus.in) All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted provided that the following conditions are met:
+ *  Redistributions of source code must retain the above copyright notice, this
+ *   list of conditions and the following disclaimer.
+ *  Redistributions in binary form must reproduce the above copyright notice, this
+ *   list of conditions and the following disclaimer in the documentation and/or
+ *   other materials provided with the distribution.
+ *  Neither the name of “onCampus Private Limited” nor the names of its contributors may be used to
+ *   endorse or promote products derived from this software without specific prior
+ *   written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+// Apply the Crashlytics Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics'
+
+// Apply the Performance Monitoring plugin
+apply plugin: 'com.google.firebase.firebase-perf'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.svijayr007.androideatitv2"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.1.0' //dont change
+
+    implementation 'com.robertlevonyan.view:CustomFloatingActionButton:3.0.1'
+
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.google.android.play:core:1.8.0'
+
+
+
+    implementation 'com.google.firebase:firebase-firestore:21.6.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    //libraries
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.asksira.android:loopingviewpager:1.1.4'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.github.andremion:counterfab:1.2.2'
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
+    implementation 'com.github.andremion:counterfab:1.2.2'
+    implementation 'com.karumi:dexter:6.2.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation "com.airbnb.android:lottie:3.4.0"
+    implementation 'io.paperdb:paperdb:2.7.1'
+    implementation 'com.github.Binary-Finery:Bungee:2.0'
+    compile 'com.github.zcweng:switch-button:0.0.3@aar'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
+    implementation 'com.github.Trendyol:BubbleScrollBar:0.1'
+    //Google Auth
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.4.0'
+
+    //slide view
+    implementation 'com.github.MAXDeliveryNG:slideview:1.1.0'
+
+    //hud
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+
+    //Advance Webview
+    implementation 'com.thefinestartist:finestwebview:1.2.7'
+
+    //browser
+    implementation 'androidx.browser:browser:1.2.0'
+
+    //firebase analytics
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+
+    //Crashlytics
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.1'
+
+    // Add the dependency for the Performance Monitoring library
+    implementation 'com.google.firebase:firebase-perf:19.0.8'
+
+
+
+
+    //cashfree
+    implementation 'com.cashfree.pg:android-sdk:1.5.0'
+    implementation 'com.android.volley:volley:1.1.1'
+
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    implementation 'androidx.room:room-rxjava2:2.2.5'
+    annotationProcessor 'androidx.room:room-compiler:2.2.5'
+
+    //firebase
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+    implementation 'com.google.firebase:firebase-database:19.4.0'
+    implementation 'com.firebaseui:firebase-ui-auth:6.2.1'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
+
+
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+    implementation 'androidx.navigation:navigation-runtime:2.3.0'
+
+    //Customerly
+    implementation 'io.customerly:customerly-android-sdk:3.0.10'
+
+}

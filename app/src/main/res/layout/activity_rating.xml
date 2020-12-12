@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ New BSD License
+  ~
+  ~ Copyright © 2020 Vijayaraghavan (https://www.oncampus.in) All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~ * Redistributions of source code must retain the above copyright notice, this
+  ~   list of conditions and the following disclaimer.
+  ~ * Redistributions in binary form must reproduce the above copyright notice, this
+  ~   list of conditions and the following disclaimer in the documentation and/or
+  ~   other materials provided with the distribution.
+  ~ * Neither the name of “onCampus Private Limited” nor the names of its contributors may be used to
+  ~   endorse or promote products derived from this software without specific prior
+  ~   written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+  ~ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  ~ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  ~ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+  ~ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  ~ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  ~ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+  ~ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  ~ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".ui.suggestions.SuggestionsActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="85.00dp">
+
+        <ImageView
+            android:id="@+id/bgIV"
+            android:layout_width="match_parent"
+            android:layout_height="82.00dp"
+            android:background="@drawable/tool_bar_curve"/>
+
+        <ImageView
+            android:id="@+id/backIV"
+            android:layout_width="35.00dp"
+            android:layout_height="35.00dp"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="22.00dp"/>
+
+        <TextView
+            android:id="@+id/title1TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12.00dp"
+            android:layout_toRightOf="@+id/backIV"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Rate your order from "
+            android:textColor="@android:color/white"
+            android:textSize="16.00sp"
+            />
+
+        <TextView
+            android:id="@+id/order_rating_restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12.00dp"
+            android:layout_below="@+id/title1TV"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Sathyas "
+            android:layout_toRightOf="@+id/backIV"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/darkTextColor"
+            android:textSize="16.00sp"
+            />
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/rating_image"
+        android:layout_width="wrap_content"
+        android:layout_height="180.00dp"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="80dp"
+        android:gravity="top|left"
+        android:src="@drawable/rating_image" />
+
+    <TextView
+        android:id="@+id/ratingText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating_image"
+        android:text="Rate your order from "
+        android:fontFamily="@font/brandon_medium"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="35dp"
+        />
+    <View
+        android:layout_width="40dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@android:color/holo_orange_dark"
+        />
+
+    <TextView
+        android:id="@+id/rating_restaurant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sathyas"
+        android:fontFamily="@font/brandon_medium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="12dp"
+        />
+    <TextView
+        android:id="@+id/rating_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textColor="@color/black"
+        android:fontFamily="@font/brandon_medium"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:drawableStart="@drawable/ic_baseline_star_24" />
+
+
+    <RatingBar
+        android:id="@+id/order_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyle"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/darkTextColor"
+        android:fontFamily="@font/brandon_medium"
+        android:text="Your word makes onCampus a better place, you are the \n
+                \t\t\t\t\t\t\t\t\t\t\t\t influence!" />
+
+    <TextView
+        android:id="@+id/order_submit_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Submit "
+        android:textColor="@color/quantum_orange"
+        android:background="@drawable/bg_black_stroke"
+        android:padding="2dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:fontFamily="@font/poppins"/>
+
+
+
+
+</LinearLayout>

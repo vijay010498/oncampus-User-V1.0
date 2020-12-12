@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ New BSD License
+  ~
+  ~ Copyright © 2020 Vijayaraghavan (https://www.oncampus.in) All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~ * Redistributions of source code must retain the above copyright notice, this
+  ~   list of conditions and the following disclaimer.
+  ~ * Redistributions in binary form must reproduce the above copyright notice, this
+  ~   list of conditions and the following disclaimer in the documentation and/or
+  ~   other materials provided with the distribution.
+  ~ * Neither the name of “onCampus Private Limited” nor the names of its contributors may be used to
+  ~   endorse or promote products derived from this software without specific prior
+  ~   written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+  ~ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  ~ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  ~ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+  ~ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  ~ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  ~ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+  ~ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  ~ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="modal_height_div">16dp</dimen>
+    <string name="CFUPI_buttonText_noUpiApp">Click to go back</string>
+    <string name="CFUPI_text_noUpiApp">Install an UPI enabled app to continue</string>
+    <string name="CFUPI_text_upiAppExists">Choose an UPI app to pay with</string>
+    <string name="app_name">Cashfree</string>
+    <string name="cf_continue">CONTINUE</string>
+    <string name="cf_remember_username">Remember Username</string>
+    <string name="close">close</string>
+    <string name="currency_code_upi">INR</string>
+    <string name="endpoint_amazon_init_local">http://626b6e45.ngrok.io/billpay/amazonpayment/initiatepayment</string>
+    <string name="endpoint_amazon_init_prod">https://www.cashfree.com/amazonpayment/initiatepayment</string>
+    <string name="endpoint_amazon_init_test">https://test.cashfree.com/billpay/amazonpayment/initiatepayment</string>
+    <string name="endpoint_amazon_order_local">http://626b6e45.ngrok.io/billpay/amazonpayment/processpayment</string>
+    <string name="endpoint_amazon_order_prod">https://www.cashfree.com/amazonpayment/processpayment</string>
+    <string name="endpoint_amazon_order_test">https://test.cashfree.com/billpay/amazonpayment/processpayment</string>
+    <string name="endpoint_amazon_verify_local">http://626b6e45.ngrok.io/billpay/amazonpayment/checkstatus</string>
+    <string name="endpoint_amazon_verify_prod">https://www.cashfree.com/amazonpayment/checkstatus</string>
+    <string name="endpoint_amazon_verify_test">https://test.cashfree.com/billpay/amazonpayment/checkstatus</string>
+    <string name="endpoint_local">http://192.168.19.137/billpay/checkout/post/submit</string>
+    <string name="endpoint_prod">https://www.cashfree.com/checkout/post/submit</string>
+    <string name="endpoint_test">https://test.cashfree.com/billpay/checkout/post/submit</string>
+    <string name="endpoint_upi_prod">https://www.cashfree.com/checkout/post/upi-submit</string>
+    <string name="endpoint_upi_test">https://test.cashfree.com/billpay/checkout/post/upi-submit</string>
+    <string name="endpoint_upi_verify_prod">https://www.cashfree.com/upi/checkStatusPayRequest</string>
+    <string name="endpoint_upi_verify_test">https://test.cashfree.com/billpay/upi/checkStatusPayRequest</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="payee_MCC_upi">1520</string>
+    <string name="payee_address_upi">cashfree@yesbank</string>
+    <string name="payee_name_upi">Cashfree</string>
+    <style name="CFBlueBtnStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#2177e7</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">#2177e7</item>
+    </style>
+    <style name="CFInvBlueBtnStyle" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">#2177e7</item>
+        <item name="colorButtonNormal">@android:color/white</item>
+    </style>
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        //New values
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+</resources>

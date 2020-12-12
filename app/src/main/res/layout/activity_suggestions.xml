@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ New BSD License
+  ~
+  ~ Copyright © 2020 Vijayaraghavan (https://www.oncampus.in) All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~ * Redistributions of source code must retain the above copyright notice, this
+  ~   list of conditions and the following disclaimer.
+  ~ * Redistributions in binary form must reproduce the above copyright notice, this
+  ~   list of conditions and the following disclaimer in the documentation and/or
+  ~   other materials provided with the distribution.
+  ~ * Neither the name of “onCampus Private Limited” nor the names of its contributors may be used to
+  ~   endorse or promote products derived from this software without specific prior
+  ~   written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+  ~ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  ~ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  ~ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+  ~ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  ~ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  ~ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+  ~ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  ~ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".ui.suggestions.SuggestionsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="82.00dp">
+
+        <ImageView
+            android:id="@+id/bgIV"
+            android:layout_width="match_parent"
+            android:layout_height="82.00dp"
+            android:background="@drawable/tool_bar_curve"/>
+
+        <ImageView
+            android:id="@+id/backIV"
+            android:layout_width="35.00dp"
+            android:layout_height="35.00dp"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="22.00dp"/>
+
+        <TextView
+            android:id="@+id/title1TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12.00dp"
+            android:layout_toRightOf="@+id/backIV"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Suggestions"
+            android:textColor="@android:color/white"
+            android:textSize="16.00sp"
+            />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_suggestions"
+        android:layout_width="match_parent"
+        android:layout_height="180.00dp"
+        android:layout_margin="20.00dp"
+        android:layout_below="@+id/layout1"
+        android:background="@drawable/post_detail_bg"
+        android:padding="8.00dp"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Please share your suggestions.."
+        android:gravity="top|left"
+        android:textSize="12.00sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="match_parent"
+        android:layout_height="40.00dp"
+        android:layout_marginTop="15.00dp"
+        android:layout_below="@+id/layout1"
+        app:lottie_rawRes="@raw/emoji"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        app:lottie_autoPlay="true" />
+
+    <TextView
+        android:id="@+id/text1TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Thanks for your valuable suggestions. We will look into it and get back to you soon!"
+        android:textColor="@color/colorAccentText"
+        android:visibility="gone"
+        android:layout_below="@+id/lottie"
+        android:layout_marginTop="5.00dp"
+        android:layout_marginStart="20.00dp"
+        android:layout_marginEnd="20.00dp"
+        android:gravity="center"
+        android:textSize="13.00sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="36.00dp"
+        app:cardCornerRadius="5dp"
+        android:clickable="true"
+        android:layout_below="@+id/et_suggestions"
+        android:id="@+id/submitCV"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/pageColor2"
+        android:layout_marginStart="20.00dp"
+        android:layout_marginEnd="20.00dp"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/buttonTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14.00sp"
+            android:textColor="@android:color/white"
+            android:text="Submit"
+            />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+  ~ New BSD License
+  ~
+  ~ Copyright © 2020 Vijayaraghavan (https://www.oncampus.in) All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without modification,
+  ~ are permitted provided that the following conditions are met:
+  ~ * Redistributions of source code must retain the above copyright notice, this
+  ~   list of conditions and the following disclaimer.
+  ~ * Redistributions in binary form must reproduce the above copyright notice, this
+  ~   list of conditions and the following disclaimer in the documentation and/or
+  ~   other materials provided with the distribution.
+  ~ * Neither the name of “onCampus Private Limited” nor the names of its contributors may be used to
+  ~   endorse or promote products derived from this software without specific prior
+  ~   written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+  ~ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  ~ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  ~ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+  ~ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  ~ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  ~ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+  ~ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  ~ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  -->
+
+<LinearLayout
+    android:id="@+id/root_layout_food"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp">
+            <ImageView
+                android:id="@+id/img_food_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/ic_food"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:id="@+id/image_veg_non_veg"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:background="@android:color/white"
+                android:src="@drawable/ic_veg" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_food_name"
+            android:layout_marginTop="5dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:text="ROASTED QUATER CHICKEN"/>
+
+        <TextView
+            android:id="@+id/food_desc"
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="7sp"
+            android:maxWidth="120dip"
+            android:maxLines="2"
+            android:text="Food Description"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_food_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹120"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                />
+
+            <include
+                android:id="@+id/quantityControl"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/inc_dec_view"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
